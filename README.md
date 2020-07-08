@@ -1,15 +1,15 @@
-## HumanDetection
+# HumanDetection
 
-# Introduction
+## Introduction
 
-# Requirements
+## Requirements
 
-# Installation
+## Installation
 
-# Performance of code
+## Performance of code
 
-# Results
+## Results
 
-# To do 
+## To do 
 
-# Thanks to:
+## Thanks to:
