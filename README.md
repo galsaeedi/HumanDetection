@@ -22,9 +22,9 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
 
 ## Installation
 <ul><li>After gathering or downloading the dataset. First, split the data into train and test. Then, you need to run the python txt_to_csv.py file, to convert the txt labels files to one csv file 
- <script>
-  python txt_to_csv.py
- </script>
+ <code>
+  python txt_to_csv.py;
+ </code>
   This creates a train_labels.csv and test_labels.csv file in the \object_detection\images folder.
   <br>Download data processing scripts from <a href="https://github.com/galsaeedi/OIDv4_ToolKit"> my repo  </a>
   </li>
