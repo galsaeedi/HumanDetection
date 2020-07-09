@@ -26,14 +26,14 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
   python txt_to_csv.py
  </code><br>
   This creates a train_labels.csv and test_labels.csv file in the \object_detection\images folder.
-  <br>Download data processing scripts from <a href="https://github.com/galsaeedi/OIDv4_ToolKit"> my repo  </a>
+  <br><b>Download data processing scripts from <a href="https://github.com/galsaeedi/OIDv4_ToolKit"> my repo  </a></b>
   </li>
-  <li>Run the python generate_tfrecord.py generate the TFRecords that serve as input data to the TensorFlow training model.
+  <br><li>Run the python generate_tfrecord.py generate the TFRecords that serve as input data to the TensorFlow training model.
   <br><code>
   python generate_tfrecord.py
   </code><br>
   </li>
-  <li>To start train run
+  <br><li>To start train run
   <br><code>
   python train.py
   </code><br>
