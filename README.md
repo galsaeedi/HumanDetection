@@ -31,16 +31,16 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
   <br><b>Download data processing scripts from <a href="https://github.com/galsaeedi/OIDv4_ToolKit"> my repo  </a></b>
   </li>
   
-  <br><li>Run the python generate_tfrecord.py generate the TFRecords that serve as input data to the TensorFlow training model.
+  <br><li>Run the python generate_tfrecord.py generate the TFRecords that serve as input data to the TensorFlow training model. Do it twice for both train and test
   <br><code>
-  python generate_tfrecord.py
-  </code><br>
+  python generate_tfrecord.py --csv_input={path/to/inputcsv} --image_dir={path/to/imgdir} --output_path={path/to/outputdir}
+  </code>
   </li>
   
   <br><li>To start train run
   <br><code>
-  python train.py
-  </code><br>
+  python train.py --logtostderr --train_dir={path/to/traindir} --pipeline_config_path={path/to/detector config file} --label_map_path={path/to/labelmap file}
+  </code>
     </li>
   
   <br><li>
@@ -48,16 +48,46 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
   <br><code>
   %load_ext tensorboard </code><br>
   <code>%tensorboard --logdir training 
+  </code><br>
+  </li>
+  
+  <br><li>
+  Generate the frozen inference graph (.pb file).
+  <code>python export_inference_graph.py  --input_type image_tensor --pipeline_config_path {path/to/detector config file} --trained_checkpoint_prefix {path/to/model.ckpt} --output_directory {path/to/outputdir}
   </code>
   </li>
+  
   </ul>
   
 ## Performance of code
-The overall loss of the classifier over time.
+The overall loss of the classifier over time. <br>
 <img src="imgdoc/tensorflow_loss.JPG">
 
+I stopped the training after 22,000 steps
+<img src="imgdoc/tensorflow_loss22.JPG">
+
 ## Results
+<img src="imgdoc/output2.jpg.JPG">
+<img src="imgdoc/output3.jpg.JPG">
+<img src="imgdoc/output1.jpg.JPG">
 
 ## To do 
+<ul>
+  <li>Increase the model's accuracy through: 
+    <ul>
+      <li>
+        Increase training time. 
+      </li>
+      <li>
+        Restructure the model. 
+      </li>
+    </ul> </li>
+  <li>Create vedio, webcam detection scripts</li>
+  <li></li>
+</ul>
 
 ## Thanks to:
+* Evan Juras : https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
+* AI Guy: https://github.com/theAIGuysCode/OIDv4_ToolKit
+* datitran : https://github.com/datitran/raccoon_dataset
+* And everyone who develops open source projects :) 
