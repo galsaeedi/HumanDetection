@@ -5,10 +5,11 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
 
 ## Requirements
 <ul>
-<li>Python3</li>
-<li>Tensorflow 1.15: Download the full TensorFlow object detection repository located at https://github.com/tensorflow/models</li>
-<li>Opencv [v3]</li>
-<li>python libraries: Here is a list of all the python dependencies
+<li><b>Python3</b></li>
+<li><b>Tensorflow 1.15</b>: Download the full TensorFlow object detection repository located at https://github.com/tensorflow/models</li>
+<li><b>pre-trained classifiers</b>: TensorFlow provides several object detection models (pre-trained classifiers with specific neural network architectures) in its <a herf="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md">model zoo</a>. I re-trained my detector on the Faster-RCNN-Inception-V2 model, the detection worked very well, but with a noticeably slow speed. </li>
+<li><b>Opencv</b> [v3]</li>
+<li><b>python libraries</b>: Here is a list of all the python dependencies
   <ul><li>numpy</li>
   <li>numpy</li>
   <li>numpy</li>
@@ -18,7 +19,7 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
   </ll>
 
 </ul>
-* **note:** This code runs on the cloud. If you work locally, it is recommended to install Anaconda, CUDA and cuDNN. [Here](https://www.tensorflow.org/install/source#tested_build_configurations) is a table showing which version of TensorFlow requires which versions of CUDA and cuDNN.
+<b>note:</b> This code runs on the cloud. If you work locally, it is recommended to install Anaconda, CUDA and cuDNN. <a href="https://www.tensorflow.org/install/source#tested_build_configurations"> Here </a> is a table showing which version of TensorFlow requires which versions of CUDA and cuDNN.
 
 ## Installation
 
