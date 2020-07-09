@@ -67,9 +67,9 @@ I stopped the training after 22,000 steps
 <img src="imgdoc/tensorflow_loss22.JPG">
 
 ## Results
-<img src="imgdoc/output2.jpg.JPG">
-<img src="imgdoc/output3.jpg.JPG">
-<img src="imgdoc/output1.jpg.JPG">
+<img src="imgdoc/output2.jpg">
+<img src="imgdoc/output3.jpg">
+<img src="imgdoc/output1.jpg">
 
 ## To do 
 <ul>
