@@ -83,7 +83,7 @@ I stopped the training after 22,000 steps
       </li>
     </ul> </li>
   <li>Create vedio, webcam detection scripts</li>
-  <li></li>
+  
 </ul>
 
 ## Thanks to:
