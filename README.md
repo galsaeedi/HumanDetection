@@ -22,19 +22,19 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
 
 ## Installation
 <ul><li>After gathering or downloading the dataset. First, split the data into train and test. Then, you need to run the python txt_to_csv.py file, to convert the txt labels files to one csv file 
-  ```bash
+  ```
   python txt_to_csv.py
   ```
   This creates a train_labels.csv and test_labels.csv file in the \object_detection\images folder.
   <br>Download data processing scripts from <a href="https://github.com/galsaeedi/OIDv4_ToolKit"> my repo  </a>
   </li>
   <li>Run the python generate_tfrecord.py generate the TFRecords that serve as input data to the TensorFlow training model.
-  ```bash
+  ```
   python generate_tfrecord.py
   ```
   </li>
   <li>To start train run
-  ```bash 
+  ```
   python train.py
   ```
     </li>
@@ -42,6 +42,7 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
   </ul>
   
 ## Performance of code
+<img src="">
 
 ## Results
 
