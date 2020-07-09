@@ -44,7 +44,7 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
     </li>
   
   <br><li>
-  View the progress of the training job by using TensorBoard.
+  View the progress of the training job using TensorBoard on Google Colab.
   <br><code>
   %load_ext tensorboard </code><br>
   <code>%tensorboard --logdir training 
@@ -53,7 +53,8 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
   </ul>
   
 ## Performance of code
-<img src="">
+The overall loss of the classifier over time.
+<img src="imgdoc/tensorflow_loss.JPG">
 
 ## Results
 
