@@ -46,8 +46,8 @@ I've worked on the problem of human detection,face detection, eye detection. Thi
   <br><li>
   View the progress of the training job by using TensorBoard.
   <br><code>
-  %load_ext tensorboard <br>
-  %tensorboard --logdir training 
+  %load_ext tensorboard </code><br>
+  <code>%tensorboard --logdir training 
   </code>
   </li>
   </ul>
